@@ -1,0 +1,556 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>L’ego : manifestations, schèmes, combats et conséquences | CTM</title>
+  <meta name="description" content="Une lecture claire de l’ego : ses manifestations, ses schèmes, ses préjugés, ses combats et ses conséquences sur la personne, la famille, les groupes, les nations et la planète." />
+  <meta name="robots" content="index,follow" />
+  <link rel="canonical" href="https://clprepas.com/blog/ctm-ego-ia/" />
+  <meta property="og:type" content="article" />
+  <meta property="og:site_name" content="CLPrepas · CTM" />
+  <meta property="og:title" content="L’ego : manifestations, schèmes, combats et conséquences" />
+  <meta property="og:description" content="Un article CTM sur l’ego comme système de défense, ses effets du quotidien jusqu’aux logiques collectives, et la voie de sortie par la présence." />
+  <meta property="og:url" content="https://clprepas.com/blog/ctm-ego-ia/" />
+  <meta name="twitter:card" content="summary_large_image" />
+  <meta name="twitter:title" content="L’ego : manifestations, schèmes, combats et conséquences" />
+  <meta name="twitter:description" content="Une synthèse claire, structurée et premium pour le blog CTM." />
+  <style>
+    :root{
+      --bg:#f7f1e8;
+      --bg-soft:#fbf7f1;
+      --paper:#fffdfa;
+      --ink:#172033;
+      --muted:#5b6475;
+      --line:#e4d7bf;
+      --navy:#0e2344;
+      --navy-2:#17325f;
+      --gold:#b38a43;
+      --gold-soft:#f2e6cf;
+      --success:#1e5b4f;
+      --shadow:0 20px 60px rgba(9,22,44,.10);
+      --radius:22px;
+      --max:1180px;
+    }
+    *{box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{
+      margin:0;
+      font-family:Inter, ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+      color:var(--ink);
+      background:
+        radial-gradient(circle at top right, rgba(179,138,67,.11), transparent 30%),
+        linear-gradient(180deg, #f9f4eb 0%, #f7f1e8 42%, #f6efe4 100%);
+      line-height:1.7;
+    }
+    a{color:inherit;text-decoration:none}
+    img{max-width:100%;display:block}
+    .wrap{width:min(var(--max), calc(100% - 32px)); margin:0 auto}
+    .topbar{
+      position:sticky;top:0;z-index:40;
+      backdrop-filter: blur(14px);
+      background:rgba(247,241,232,.82);
+      border-bottom:1px solid rgba(228,215,191,.75);
+    }
+    .topbar-inner{display:flex;align-items:center;justify-content:space-between;gap:18px;padding:14px 0}
+    .brand{display:flex;align-items:center;gap:12px;font-weight:700;letter-spacing:.02em}
+    .brand-badge{
+      width:42px;height:42px;border-radius:14px;
+      display:grid;place-items:center;
+      color:#fff;background:linear-gradient(135deg,var(--navy),var(--navy-2));
+      box-shadow:0 10px 25px rgba(14,35,68,.24);
+      font-size:.95rem
+    }
+    .brand small{display:block;color:var(--muted);font-weight:600;letter-spacing:.06em;text-transform:uppercase;font-size:.72rem}
+    .nav{display:flex;gap:10px;flex-wrap:wrap;justify-content:flex-end}
+    .nav a{
+      font-size:.92rem;
+      color:var(--muted);
+      padding:10px 14px;border-radius:999px;
+      transition:.2s ease;
+    }
+    .nav a:hover{background:#fff;color:var(--navy);box-shadow:var(--shadow)}
+    .hero{padding:72px 0 28px}
+    .hero-grid{
+      display:grid;
+      grid-template-columns:1.25fr .75fr;
+      gap:28px;
+      align-items:stretch;
+    }
+    .hero-main, .hero-side, .panel, .faq-item, .flashcard, .quote, .diagnostic, .callout, .footer-card{
+      background:rgba(255,253,250,.92);
+      border:1px solid rgba(228,215,191,.95);
+      box-shadow:var(--shadow);
+      border-radius:var(--radius);
+    }
+    .hero-main{padding:42px}
+    .eyebrow{
+      display:inline-flex;align-items:center;gap:10px;
+      background:var(--gold-soft); color:var(--navy);
+      border:1px solid rgba(179,138,67,.24);
+      border-radius:999px;padding:8px 14px;
+      font-size:.82rem;font-weight:700;letter-spacing:.06em;text-transform:uppercase;
+    }
+    h1,h2,h3{font-family:Georgia, "Times New Roman", serif;line-height:1.12;margin:0 0 14px}
+    h1{font-size:clamp(2.35rem, 4vw, 4.35rem);max-width:11ch; margin-top:20px}
+    h2{font-size:clamp(1.65rem, 2.2vw, 2.25rem);margin-bottom:16px}
+    h3{font-size:1.18rem;margin-bottom:10px}
+    .lead{font-size:1.16rem;color:#293246;max-width:60ch}
+    .meta{display:flex;flex-wrap:wrap;gap:10px 16px;margin-top:26px;color:var(--muted);font-size:.95rem}
+    .meta span{display:inline-flex;align-items:center;gap:8px}
+    .hero-side{padding:30px;display:flex;flex-direction:column;justify-content:space-between;gap:18px;background:linear-gradient(180deg, rgba(14,35,68,.98), rgba(23,50,95,.96));color:#f9f1e4}
+    .hero-side h3{font-family:Inter, sans-serif;font-size:.95rem;letter-spacing:.08em;text-transform:uppercase;color:#e5cc9b}
+    .hero-side p{margin:0;color:#f5ede0}
+    .metric-list{display:grid;gap:12px;margin-top:8px}
+    .metric{padding:14px 16px;border:1px solid rgba(229,204,155,.16);border-radius:16px;background:rgba(255,255,255,.04)}
+    .metric strong{display:block;font-size:1rem;color:#fff;margin-bottom:4px}
+    .grid-main{
+      display:grid;
+      grid-template-columns:minmax(0,1fr) 320px;
+      gap:28px;
+      padding:10px 0 50px;
+    }
+    .article{display:grid;gap:24px}
+    .panel{padding:32px}
+    .panel p{margin:0 0 14px}
+    .panel p:last-child{margin-bottom:0}
+    .accent-title{display:flex;align-items:center;gap:12px;margin-bottom:16px}
+    .accent-line{width:54px;height:4px;border-radius:999px;background:linear-gradient(90deg,var(--gold),var(--navy))}
+    .toc{position:sticky;top:92px;display:grid;gap:18px}
+    .toc-card{padding:24px}
+    .toc-card h3{font-family:Inter,sans-serif;font-size:.9rem;letter-spacing:.08em;text-transform:uppercase;color:var(--muted);margin-bottom:14px}
+    .toc-card a{display:block;padding:10px 0;border-bottom:1px dashed var(--line);color:#293246;font-weight:600}
+    .toc-card a:last-child{border-bottom:none}
+    .key-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:14px}
+    .key-item{padding:18px;border:1px solid var(--line);background:var(--bg-soft);border-radius:18px}
+    .key-item strong{display:block;margin-bottom:6px;color:var(--navy)}
+    .two-cols{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px}
+    ul.clean{margin:0;padding-left:18px}
+    ul.clean li{margin-bottom:10px}
+    .quote{padding:26px 28px;background:linear-gradient(180deg,#fffdfa,#fbf4e6)}
+    .quote p{font-size:1.12rem;margin:0;color:#243047}
+    .quote small{display:block;margin-top:12px;color:var(--muted)}
+    .scale-grid{display:grid;grid-template-columns:repeat(5,minmax(0,1fr));gap:14px}
+    .scale-card{padding:18px;border-radius:18px;border:1px solid var(--line);background:var(--bg-soft)}
+    .scale-card strong{display:block;margin-bottom:8px;color:var(--navy)}
+    .callout{padding:24px;background:linear-gradient(180deg,#faf5ea,#fffdfa)}
+    .callout strong{display:block;margin-bottom:8px;color:var(--navy)}
+    .diagnostic{padding:28px}
+    .checks{display:grid;gap:12px;margin-top:16px}
+    .check{display:flex;gap:12px;align-items:flex-start;padding:14px 0;border-bottom:1px dashed var(--line)}
+    .check:last-child{border-bottom:none;padding-bottom:0}
+    .tick{width:24px;height:24px;border-radius:7px;background:var(--gold-soft);border:1px solid rgba(179,138,67,.25);display:grid;place-items:center;color:var(--gold);font-weight:800;flex:0 0 auto}
+    .flashcards-wrap{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+    .flashcard{padding:22px;display:grid;gap:14px}
+    .flashcard span{font-size:.82rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:800}
+    .flashcard h3{margin:0;font-size:1.08rem}
+    .flashcard p{margin:0;color:#2d374b}
+    .faq-grid{display:grid;gap:14px}
+    .faq-item{padding:0;overflow:hidden}
+    .faq-item summary{cursor:pointer;list-style:none;padding:20px 22px;font-weight:700;color:var(--navy)}
+    .faq-item summary::-webkit-details-marker{display:none}
+    .faq-item p{padding:0 22px 20px;margin:0;color:#354056}
+    .cta{padding:10px 0 64px}
+    .footer-card{padding:34px;display:grid;grid-template-columns:1.15fr .85fr;gap:24px;background:linear-gradient(135deg, rgba(14,35,68,.98), rgba(23,50,95,.95));color:#fff}
+    .footer-card p{color:#ecf0f7}
+    .cta-actions{display:flex;flex-wrap:wrap;gap:12px;margin-top:16px}
+    .btn{display:inline-flex;align-items:center;justify-content:center;padding:13px 18px;border-radius:999px;font-weight:700;transition:.2s ease}
+    .btn-gold{background:linear-gradient(135deg,#d0a660,#b38a43);color:#182033;box-shadow:0 14px 30px rgba(179,138,67,.25)}
+    .btn-light{border:1px solid rgba(255,255,255,.28);color:#fff;background:rgba(255,255,255,.08)}
+    .mini-note{margin-top:14px;color:#6a7484;font-size:.93rem}
+    .article-footer{padding:18px 0 46px;color:var(--muted);font-size:.92rem}
+    .kpis{display:grid;gap:14px}
+    .kpi{padding:18px;border-radius:18px;background:rgba(255,255,255,.08);border:1px solid rgba(255,255,255,.1)}
+    .kpi strong{display:block;color:#f7dbab;margin-bottom:6px}
+    @media (max-width: 1060px){
+      .hero-grid,.grid-main,.footer-card{grid-template-columns:1fr}
+      .toc{position:relative;top:0}
+      .scale-grid,.flashcards-wrap,.key-grid{grid-template-columns:repeat(2,minmax(0,1fr))}
+    }
+    @media (max-width: 740px){
+      .wrap{width:min(var(--max), calc(100% - 20px))}
+      .hero{padding-top:36px}
+      .hero-main,.hero-side,.panel,.diagnostic,.footer-card{padding:24px}
+      .topbar-inner{align-items:flex-start;flex-direction:column}
+      .nav{justify-content:flex-start}
+      .two-cols,.scale-grid,.flashcards-wrap,.key-grid{grid-template-columns:1fr}
+      h1{max-width:none}
+    }
+  </style>
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "Article",
+    "headline": "L’ego : manifestations, schèmes, combats et conséquences",
+    "description": "Une lecture claire de l’ego : ses manifestations, ses schèmes, ses préjugés, ses combats et ses conséquences sur la personne, la famille, les groupes, les nations et la planète.",
+    "author": {
+      "@type": "Person",
+      "name": "Prof. Abderrahman El Hisse"
+    },
+    "publisher": {
+      "@type": "Organization",
+      "name": "CLPrepas · Club Tiriens Maroc"
+    },
+    "datePublished": "2026-03-08",
+    "dateModified": "2026-03-08",
+    "mainEntityOfPage": "https://clprepas.com/blog/ctm-ego-ia/",
+    "inLanguage": "fr"
+  }
+  </script>
+</head>
+<body>
+  <header class="topbar">
+    <div class="wrap topbar-inner">
+      <a class="brand" href="#top">
+        <div class="brand-badge">CTM</div>
+        <div>
+          CLPrepas · Blog CTM
+          <small>Page article premium</small>
+        </div>
+      </a>
+      <nav class="nav" aria-label="Navigation rapide">
+        <a href="#definition">Définition</a>
+        <a href="#manifestations">Manifestations</a>
+        <a href="#consequences">Conséquences</a>
+        <a href="#sortie">Voie de sortie</a>
+        <a href="#faq">FAQ</a>
+      </nav>
+    </div>
+  </header>
+
+  <main id="top">
+    <section class="hero">
+      <div class="wrap hero-grid">
+        <article class="hero-main">
+          <div class="eyebrow">CTM · Conscience · Présence · Responsabilité intérieure</div>
+          <h1>L’ego n’est pas une force. C’est une défense qui finit par gouverner.</h1>
+          <p class="lead">
+            Il parle fort. Il se justifie vite. Il veut avoir raison. Il transforme la blessure en conflit et le manque en domination.
+            Le vrai enjeu n’est pas de le maquiller. Le vrai enjeu est de le voir à l’œuvre pour ne plus lui remettre les commandes.
+          </p>
+          <div class="meta">
+            <span>08 mars 2026</span>
+            <span>Prof. Abderrahman El Hisse</span>
+            <span>Lecture essentielle · Blog CTM</span>
+          </div>
+        </article>
+
+        <aside class="hero-side">
+          <div>
+            <h3>Fil directeur</h3>
+            <p>
+              Cet article montre comment l’ego agit dans le quotidien, comment il s’étend du psychologique au collectif, et pourquoi la présence reste la sortie la plus sobre et la plus exigeante.
+            </p>
+          </div>
+          <div class="metric-list">
+            <div class="metric">
+              <strong>Ce qu’il fait</strong>
+              Il projette, accuse, compare, contrôle et cherche la validation.
+            </div>
+            <div class="metric">
+              <strong>Ce qu’il cache</strong>
+              Peur, sentiment de séparation, manque intérieur, fragilité non reconnue.
+            </div>
+            <div class="metric">
+              <strong>Ce qui le désactive</strong>
+              Observation lucide, retour au présent, désidentification du mental, parole juste.
+            </div>
+          </div>
+        </aside>
+      </div>
+    </section>
+
+    <div class="wrap grid-main">
+      <article class="article">
+        <section class="panel" id="introduction">
+          <div class="accent-title"><div class="accent-line"></div><h2>Introduction</h2></div>
+          <p>
+            Beaucoup de désordres humains ne viennent pas seulement d’un manque d’intelligence ou d’éducation. Ils viennent d’un faux centre intérieur qui veut se protéger en permanence. Ce centre, on l’appelle souvent l’ego.
+          </p>
+          <p>
+            Le problème n’est pas l’existence d’une personnalité. Le problème commence quand l’être humain s’identifie à ses pensées, à son image, à ses blessures, à son rôle ou à son groupe. À partir de là, il ne cherche plus d’abord la vérité. Il cherche à se défendre.
+          </p>
+          <p>
+            C’est ainsi que l’ego déforme le dialogue, use les relations, polarise les familles, nourrit les groupes fermés, durcit les nations et finit même par altérer notre rapport à la planète.
+          </p>
+        </section>
+
+        <section class="quote">
+          <p>
+            L’ego prospère quand l’identité dépend du mental, du passé et du regard d’autrui. Il recule quand la conscience devient observatrice, présente et moins fascinée par ses propres récits.
+          </p>
+          <small>Lecture structurante inspirée par votre dossier éditorial et par l’approche d’Eckhart Tolle.</small>
+        </section>
+
+        <section class="panel" id="definition">
+          <div class="accent-title"><div class="accent-line"></div><h2>Définition utile de l’ego</h2></div>
+          <p>
+            L’ego n’est pas toute la personne. Il est une identité de surface. Il se forme quand le moi se confond avec ce qu’il pense, ce qu’il possède, ce qu’il représente ou ce qu’il a vécu.
+          </p>
+          <p>
+            Il dit silencieusement : je suis mon histoire. Je suis mon statut. Je suis mon rôle. Je suis ce que les autres voient. Cette confusion donne une impression de force, mais cette force est nerveuse, fragile et défensive.
+          </p>
+          <div class="two-cols">
+            <div class="callout">
+              <strong>Ce qu’il n’est pas</strong>
+              L’ego n’est ni une vraie maturité ni une autorité stable. Un ego gonflé masque souvent une insécurité qui refuse d’être nommée.
+            </div>
+            <div class="callout">
+              <strong>Ce qu’il devient</strong>
+              Dès qu’il se sent menacé, il se crispe, dramatise, simplifie le réel et cherche à imposer son récit.
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="manifestations">
+          <div class="accent-title"><div class="accent-line"></div><h2>Manifestations</h2></div>
+          <p>
+            L’ego ne se montre pas seulement dans les grandes colères. Il se glisse surtout dans les habitudes ordinaires. Il apparaît quand une personne supporte mal la contradiction, transforme une remarque en attaque ou parle pour gagner plutôt que pour comprendre.
+          </p>
+          <div class="two-cols">
+            <div>
+              <h3>Signes visibles</h3>
+              <ul class="clean">
+                <li>Besoin d’être validé, admiré ou craint.</li>
+                <li>Justification immédiate avant même l’écoute.</li>
+                <li>Compulsion à comparer sa valeur à celle des autres.</li>
+                <li>Rancune entretenue pour protéger son image.</li>
+                <li>Confusion entre fermeté et domination.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Formes plus discrètes</h3>
+              <ul class="clean">
+                <li>Silence hostile et agressivité froide.</li>
+                <li>Sarcasme déguisé en lucidité.</li>
+                <li>Victimisation stratégique.</li>
+                <li>Besoin de contrôle dans les détails.</li>
+                <li>Refus d’avouer une blessure simple.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="schemas">
+          <div class="accent-title"><div class="accent-line"></div><h2>Schèmes et mécanismes</h2></div>
+          <div class="key-grid">
+            <div class="key-item"><strong>Projection</strong> Il met dehors ce qu’il ne veut pas voir dedans. Il accuse pour éviter l’examen intérieur.</div>
+            <div class="key-item"><strong>Résistance</strong> Il refuse l’erreur, la limite, la perte et l’instant tel qu’il est.</div>
+            <div class="key-item"><strong>Inflation</strong> Il se raconte qu’il est supérieur, plus méritant, plus victime ou plus héroïque.</div>
+            <div class="key-item"><strong>Défensive</strong> Il protège l’image avant de protéger le lien.</div>
+            <div class="key-item"><strong>Besoin d’avoir raison</strong> Pour lui, reconnaître une erreur ressemble à une chute d’identité.</div>
+            <div class="key-item"><strong>Recherche extérieure</strong> Il veut combler le vide avec le statut, les biens, le pouvoir ou la fusion.</div>
+          </div>
+          <p class="mini-note">
+            Tant qu’il n’est pas vu, ce mécanisme transforme une blessure simple en système de guerre intérieure.
+          </p>
+        </section>
+
+        <section class="panel" id="combats">
+          <div class="accent-title"><div class="accent-line"></div><h2>Préjugés et combats</h2></div>
+          <p>
+            L’ego est en lutte constante. Il ne veut ni perdre la face ni perdre sa fiction. Il se bat contre la critique, l’incertitude, l’impermanence et la vulnérabilité. Il se bat surtout contre le présent, parce que le présent dégonfle les récits artificiels.
+          </p>
+          <div class="two-cols">
+            <div>
+              <h3>Ses combats</h3>
+              <ul class="clean">
+                <li>Contrôler ce qui échappe.</li>
+                <li>Imposer un prestige ou un statut symbolique.</li>
+                <li>Ne jamais reconnaître une faille.</li>
+                <li>Garder un ennemi utile pour se sentir exister.</li>
+                <li>Transformer la relation en rapport de force.</li>
+              </ul>
+            </div>
+            <div>
+              <h3>Ses préjugés</h3>
+              <ul class="clean">
+                <li>Si l’autre n’est pas d’accord, alors il est contre moi.</li>
+                <li>Ma souffrance me donne raison par principe.</li>
+                <li>Mon groupe vaut plus que les autres.</li>
+                <li>Posséder plus prouve que je suis plus.</li>
+                <li>Être admiré vaut mieux qu’être vrai.</li>
+              </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="panel" id="consequences">
+          <div class="accent-title"><div class="accent-line"></div><h2>Conséquences multi-échelles</h2></div>
+          <p>
+            L’ego n’abîme pas seulement le caractère. Il façonne des climats entiers. Il produit des dégâts à toutes les échelles du vivant social.
+          </p>
+          <div class="scale-grid">
+            <div class="scale-card">
+              <strong>Personne</strong>
+              Peur chronique, conflit intérieur, insatisfaction durable, fatigue liée à l’auto-défense.
+            </div>
+            <div class="scale-card">
+              <strong>Famille</strong>
+              Dialogue cassé, comptabilité des torts, comparaisons, silences lourds, blessures transmises.
+            </div>
+            <div class="scale-card">
+              <strong>Groupes</strong>
+              Rivalités, rigidité identitaire, besoin d’exclure pour se rassurer, enfermement du récit.
+            </div>
+            <div class="scale-card">
+              <strong>Nations</strong>
+              Propagande, domination, déshumanisation de l’adversaire, guerre ouverte ou larvée.
+            </div>
+            <div class="scale-card">
+              <strong>Planète</strong>
+              Exploitation du vivant, logique de stock, séparation d’avec la nature, indifférence à la totalité.
+            </div>
+          </div>
+          <p>
+            Dès que l’ego devient collectif, il change d’échelle sans changer de nature. Une tribu absolutise son récit. Une institution protège sa façade. Une nation sanctifie son image. Le mécanisme reste le même : se gonfler soi-même en diminuant l’autre.
+          </p>
+        </section>
+
+        <section class="panel" id="sortie">
+          <div class="accent-title"><div class="accent-line"></div><h2>Voie de sortie</h2></div>
+          <p>
+            On ne sort pas du piège par un ego plus cultivé ou plus spirituel. On en sort par plus de présence. La lucidité ne détruit pas la personne. Elle dissout la confusion qui la gouverne.
+          </p>
+          <div class="two-cols">
+            <div class="callout">
+              <strong>1. Voir</strong>
+              Nommer ce qui se passe sans se mentir. Ici je me défends. Ici je projette. Ici je veux avoir raison.
+            </div>
+            <div class="callout">
+              <strong>2. Sentir</strong>
+              Revenir dans le corps. Observer la contraction, la chaleur, la tension, sans alimenter le récit.
+            </div>
+          </div>
+          <div class="callout" style="margin-top:18px">
+            <strong>3. Laisser être</strong>
+            Accepter l’instant au lieu de le combattre. Cette acceptation n’est pas mollesse. C’est l’arrêt de la guerre intérieure qui nourrit le conflit extérieur.
+          </div>
+          <p>
+            Quand cette pratique grandit, la parole change. On peut poser une limite sans humilier. On peut reconnaître une erreur sans s’effondrer. On peut rester ferme sans devenir agressif.
+          </p>
+        </section>
+
+        <section class="panel" id="transformation">
+          <div class="accent-title"><div class="accent-line"></div><h2>Ce que la présence transforme</h2></div>
+          <div class="key-grid">
+            <div class="key-item"><strong>Moins de preuve</strong> Le besoin de prouver sa valeur recule.</div>
+            <div class="key-item"><strong>Moins de domination</strong> L’autre cesse d’être un adversaire permanent.</div>
+            <div class="key-item"><strong>Moins de drame</strong> La charge réactive perd de son pouvoir.</div>
+            <div class="key-item"><strong>Plus de justesse</strong> Le rapport à soi devient plus honnête.</div>
+            <div class="key-item"><strong>Plus de clarté</strong> Les décisions naissent moins de la peur.</div>
+            <div class="key-item"><strong>Plus d’être</strong> La stabilité ne dépend plus autant de l’image.</div>
+          </div>
+        </section>
+
+        <section class="diagnostic" id="diagnostic">
+          <div class="accent-title"><div class="accent-line"></div><h2>Diagnostic rapide</h2></div>
+          <p>Ces questions ne servent pas à se juger. Elles servent à voir.</p>
+          <div class="checks">
+            <div class="check"><div class="tick">1</div><div>Ai-je besoin d’avoir raison pour me sentir solide ?</div></div>
+            <div class="check"><div class="tick">2</div><div>Est-ce que je transforme vite une remarque en attaque personnelle ?</div></div>
+            <div class="check"><div class="tick">3</div><div>Est-ce que je parle pour comprendre ou pour gagner ?</div></div>
+            <div class="check"><div class="tick">4</div><div>Est-ce que je me compare pour me rassurer ?</div></div>
+            <div class="check"><div class="tick">5</div><div>Est-ce que je protège mon image plus que la vérité ?</div></div>
+            <div class="check"><div class="tick">6</div><div>Puis-je reconnaître une blessure sans accuser immédiatement l’autre ?</div></div>
+          </div>
+        </section>
+
+        <section class="panel" id="flashcards">
+          <div class="accent-title"><div class="accent-line"></div><h2>Flashcards essentielles</h2></div>
+          <div class="flashcards-wrap">
+            <article class="flashcard"><span>Flashcard 01</span><h3>Qu’est-ce que l’ego ici ?</h3><p>Une identité de surface qui se confond avec le mental, le rôle, le passé et l’image.</p></article>
+            <article class="flashcard"><span>Flashcard 02</span><h3>Son moteur principal</h3><p>La peur d’être diminué, ignoré, vulnérable ou sans importance.</p></article>
+            <article class="flashcard"><span>Flashcard 03</span><h3>Son réflexe immédiat</h3><p>Projeter dehors ce qu’il refuse de reconnaître dedans.</p></article>
+            <article class="flashcard"><span>Flashcard 04</span><h3>Sa phrase silencieuse</h3><p>Je dois avoir raison pour exister.</p></article>
+            <article class="flashcard"><span>Flashcard 05</span><h3>Son piège relationnel</h3><p>Transformer l’échange en duel et la fermeté en domination.</p></article>
+            <article class="flashcard"><span>Flashcard 06</span><h3>Son carburant</h3><p>Comparaison, reconnaissance extérieure, contrôle et récit personnel.</p></article>
+            <article class="flashcard"><span>Flashcard 07</span><h3>Sa forme discrète</h3><p>Sarcasme, silence hostile, victimisation et rigidité froide.</p></article>
+            <article class="flashcard"><span>Flashcard 08</span><h3>À l’échelle familiale</h3><p>Il transforme l’amour en territoire et le dialogue en défense.</p></article>
+            <article class="flashcard"><span>Flashcard 09</span><h3>À l’échelle collective</h3><p>Il nourrit propagande, domination et déshumanisation de l’autre.</p></article>
+            <article class="flashcard"><span>Flashcard 10</span><h3>Son effet sur la planète</h3><p>Il traite le vivant comme un stock au lieu d’une totalité à habiter.</p></article>
+            <article class="flashcard"><span>Flashcard 11</span><h3>La sortie</h3><p>Voir, sentir, laisser être. Moins de récit. Plus de présence.</p></article>
+            <article class="flashcard"><span>Flashcard 12</span><h3>Le vrai déplacement</h3><p>Passer de la puissance de l’image à la stabilité de l’être.</p></article>
+          </div>
+        </section>
+
+        <section class="panel" id="faq">
+          <div class="accent-title"><div class="accent-line"></div><h2>FAQ</h2></div>
+          <div class="faq-grid">
+            <details class="faq-item"><summary>L’ego est-il forcément mauvais ?</summary><p>Non. Le problème n’est pas d’avoir une identité fonctionnelle. Le problème est de s’y réduire et de vivre depuis la peur qu’elle soit blessée.</p></details>
+            <details class="faq-item"><summary>Pourquoi l’ego aime-t-il tant avoir raison ?</summary><p>Parce qu’il confond vérité et survie. Reconnaître une erreur lui semble être une perte d’existence.</p></details>
+            <details class="faq-item"><summary>Peut-on être ferme sans être dominé par l’ego ?</summary><p>Oui. La fermeté juste pose une limite sans humilier. Elle vient de la clarté, pas du besoin de vaincre.</p></details>
+            <details class="faq-item"><summary>Quel lien entre ego et souffrance relationnelle ?</summary><p>Plus une personne protège son image, moins elle écoute réellement. La relation devient alors un terrain de défense.</p></details>
+            <details class="faq-item"><summary>Comment l’ego devient-il collectif ?</summary><p>Quand le même mécanisme s’agrège à un groupe, à une idéologie ou à une nation qui se sentent menacés et se raidissent.</p></details>
+            <details class="faq-item"><summary>Pourquoi parler de la planète dans un article sur l’ego ?</summary><p>Parce que le sentiment de séparation conduit aussi à exploiter le vivant au lieu d’entrer en relation avec lui.</p></details>
+            <details class="faq-item"><summary>Quelle est la première pratique utile ?</summary><p>Observer la réaction avant de l’exprimer. Nommer intérieurement la défense qui monte. Cela change déjà la qualité de l’acte.</p></details>
+            <details class="faq-item"><summary>La présence supprime-t-elle tout conflit ?</summary><p>Elle ne supprime pas les différences. Elle réduit surtout le drame, la charge réactive et la nécessité de détruire l’autre pour exister.</p></details>
+          </div>
+        </section>
+
+        <section class="panel" id="conclusion">
+          <div class="accent-title"><div class="accent-line"></div><h2>Conclusion</h2></div>
+          <p>
+            L’ego n’est pas un simple défaut de caractère. Il influence la manière de parler, d’aimer, de juger, de gouverner et d’habiter la Terre. Tant qu’il n’est pas vu, il transforme la vie en défense. Dès qu’il est observé, quelque chose s’ouvre.
+          </p>
+          <p>
+            La vraie question n’est pas seulement de savoir ce que l’autre a fait. La vraie question est plus exigeante : qu’est-ce que je protège en moi avec tant de rigidité ? Là commence la responsabilité intérieure. Là commence aussi une paix plus crédible.
+          </p>
+        </section>
+
+        <div class="article-footer">
+          Article structuré pour une publication premium sur clprepas.com/blog/ctm-ego-ia.
+        </div>
+      </article>
+
+      <aside class="toc">
+        <section class="panel toc-card">
+          <h3>Plan de lecture</h3>
+          <a href="#introduction">Introduction</a>
+          <a href="#definition">Définition utile</a>
+          <a href="#manifestations">Manifestations</a>
+          <a href="#schemas">Schèmes</a>
+          <a href="#combats">Préjugés et combats</a>
+          <a href="#consequences">Conséquences</a>
+          <a href="#sortie">Voie de sortie</a>
+          <a href="#flashcards">Flashcards</a>
+          <a href="#faq">FAQ</a>
+          <a href="#conclusion">Conclusion</a>
+        </section>
+
+        <section class="panel toc-card">
+          <h3>Points clés</h3>
+          <div class="checks" style="margin-top:0">
+            <div class="check"><div class="tick">A</div><div>L’ego n’est pas la personne entière. Il est un faux centre défensif.</div></div>
+            <div class="check"><div class="tick">B</div><div>Il transforme le manque intérieur en contrôle, comparaison et domination.</div></div>
+            <div class="check"><div class="tick">C</div><div>Il devient destructeur quand il se fait familial, collectif ou institutionnel.</div></div>
+            <div class="check"><div class="tick">D</div><div>La présence change la qualité de la parole, du lien et de la décision.</div></div>
+          </div>
+        </section>
+      </aside>
+    </div>
+
+    <section class="cta">
+      <div class="wrap">
+        <div class="footer-card">
+          <div>
+            <h2>Une page pour lire. Une page pour se voir.</h2>
+            <p>
+              Cette publication peut être prolongée en dossier pédagogique, en carrousel social, en message WhatsApp groupe ou en landing éditoriale CTM.
+            </p>
+            <div class="cta-actions">
+              <a class="btn btn-gold" href="#top">Revenir en haut</a>
+              <a class="btn btn-light" href="#diagnostic">Commencer par le diagnostic</a>
+            </div>
+          </div>
+          <div class="kpis">
+            <div class="kpi"><strong>Usage blog</strong> Structure compatible article long format, page manifeste ou landing éditoriale.</div>
+            <div class="kpi"><strong>Usage social</strong> Le contenu se décline facilement en extraits, carrousels et capsules courtes.</div>
+            <div class="kpi"><strong>Usage CTM</strong> Bonne base pour réflexion collective sur présence, responsabilité et qualité du dialogue.</div>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
